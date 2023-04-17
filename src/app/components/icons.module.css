@@ -1,0 +1,14 @@
+.logoStyle{
+    font-size: 3rem;
+    color: #000;
+}
+.logoStyle:hover{
+    cursor: pointer;
+}
+.iconsStyle{
+    font-size: 1.4rem;
+    color: #000;
+}
+.iconsStyle:hover{
+    cursor: pointer;
+}
