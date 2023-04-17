@@ -1,0 +1,48 @@
+.header{
+    width: 100%;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.advise_bar{
+    background-color: black;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.header .advise_content{
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .advise_content h1, .header .advise_content h4{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: monospace;
+    display: flex;
+    color: white;
+}
+/* aside */
+.header aside{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.header aside .aside_content{
+    max-width: 1248px;
+    -webkit-backdrop-filter: brightness(110%) blur(5px);
+    backdrop-filter: brightness(110%) blur(5px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.header aside .aside_content div{
+    display: flex;
+    gap: 8px;
+}
