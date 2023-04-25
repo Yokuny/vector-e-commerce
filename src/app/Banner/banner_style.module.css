@@ -1,0 +1,40 @@
+.banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.bannerImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerImage img{
+    width: 100%;
+    object-fit: cover;
+}
+.bannerDescription{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.bannerDescription span{
+    display: inline-block;
+    font-size: max(48px,min(5vw,76px));
+    font-weight: 800;
+    letter-spacing: -.05em;
+    color: #000;
+}
+
+.bannerDescription p{
+    width: 83%;
+    text-align: justify;
+    font-size: max(15px,min(2vw,20px));
+    line-height: 1.3;
+    font-weight: 400;
+    color: #666;
+}

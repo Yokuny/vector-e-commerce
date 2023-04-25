@@ -1,5 +1,11 @@
-import styles from "./homeStyle/homePage.module.css";
-
+import home from "./styles/home_page.module.css";
+import Banner from "./Banner/Banner.js";
+import Collections from "./Collections/Collections.js";
 export default function Home() {
-  return <main>Hello world</main>;
+  return (
+    <main className={home.homeStyle}>
+      <Banner />
+      <Collections />
+    </main>
+  );
 }

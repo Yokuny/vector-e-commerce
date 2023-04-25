@@ -1,0 +1,49 @@
+.color_text{
+    font-weight: 700;
+    white-space: nowrap;
+    animation: background-pan 6s linear infinite;
+}
+.purple{
+    background: linear-gradient(
+        to right,
+        rgb(123, 31, 162),
+        rgb(103, 58, 183),
+        rgb(244, 143, 177),
+        rgb(123, 31, 162)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blue{
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 255),
+        rgb(255, 255, 255),
+        rgb(0, 255, 255),
+        rgb(0, 0, 255)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.red{
+    background: linear-gradient(
+        to right,
+        rgb(220, 0, 0),
+        rgb(255, 200, 0),
+        rgb(255, 230, 0),
+        rgb(220, 0, 0)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes background-pan{
+    0%{
+        background-position: 0% center;
+    }
+    100%{
+        background-position: 200% center;
+    }
+}

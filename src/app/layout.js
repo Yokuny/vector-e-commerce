@@ -1,8 +1,9 @@
-import "./globals.css";
+import "./styles/globals.css";
 import Logo from "./components/Logo.js";
+import layoutStyle from "./styles/layout_style.module.css";
 import HeaderIcons from "./components/HeaderIcons.js";
-import layoutStyle from "./homeStyle/layoutStyle.module.css";
-import colorText from "./colorText.module.css";
+import colorText from "./styles/color_text.module.css";
+import bodyStyle from "./styles/body_style.module.css";
 
 export const metadata = {
   title: {
@@ -20,10 +21,13 @@ export default function RootLayout({ children }) {
           <div className={layoutStyle.advise_bar}>
             <div className={layoutStyle.advise_content}>
               <h1>
-                Brand new collection out here. Called <span className={colorText.color_text}>Brutal#01</span>
+                Brand new collection out here. Called
+                <span className={[colorText.color_text, colorText.purple].join(" ")}>Brutal#01</span>
               </h1>
               <h4>
-                Check right now<span className={colorText.color_text}>barbarian</span>collection →
+                Check right now
+                <span className={[colorText.color_text, colorText.purple].join(" ")}>barbarian</span>
+                collection →
               </h4>
             </div>
           </div>
@@ -45,7 +49,11 @@ export default function RootLayout({ children }) {
             </div>
           </aside>
         </header>
-        {children}
+        <main className={bodyStyle.bodyStyle}>
+          <div className={bodyStyle.bodyDisplay}>
+            <div className={bodyStyle.bodySize}>{children}</div>
+          </div>
+        </main>
       </body>
     </html>
   );

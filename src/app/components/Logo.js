@@ -1,7 +1,7 @@
 "use client";
 import { IonIcon } from "@ionic/react";
 import { swapVerticalOutline } from "ionicons/icons";
-import logoStyle from "./icons.module.css";
+import logoStyle from "./header_icons.module.css";
 
 const Logo = () => {
   return (

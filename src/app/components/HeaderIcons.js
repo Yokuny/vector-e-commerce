@@ -4,8 +4,7 @@ import { heartOutline } from "ionicons/icons";
 import { cartOutline } from "ionicons/icons";
 import { personOutline } from "ionicons/icons";
 import { searchOutline } from "ionicons/icons";
-
-import iconsStyle from "./icons.module.css";
+import iconsStyle from "./header_icons.module.css";
 
 const HeaderIcons = () => {
   return (

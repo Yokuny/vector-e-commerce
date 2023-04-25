@@ -1,0 +1,18 @@
+.bodyStyle{
+    margin-top: calc(36px + 80px);
+    width: 100%;
+
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: monospace;
+}
+.bodyDisplay{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    content: "";
+}
+.bodySize{
+    max-width: var(--max-width);
+    width: 100%;
+}

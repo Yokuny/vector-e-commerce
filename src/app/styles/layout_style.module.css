@@ -1,0 +1,66 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: monospace;
+    color: white;
+}
+.advise_bar{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #000;
+}
+.header .advise_content{
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .advise_content h1, .header .advise_content h4{
+    display: flex;
+}
+.advise_content h1 span::after,
+.advise_content h1 span::before,
+.advise_content h4 span::after,
+.advise_content h4 span::before{
+    content: " ";
+    white-space: pre;
+}
+/* aside */
+.header aside{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.header aside .aside_content{
+    max-width: 1248px;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background: hsla(0,0%,100%,.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.header aside .aside_content h4{
+    display: flex;
+    align-items: center;
+    transition: color .2s ease;
+    color: #666;
+}
+.header aside .aside_content h4:hover{
+    color: #000;
+    cursor: pointer;
+}
+.header aside .aside_content div{
+    display: flex;
+    gap: 1.4rem;
+}
